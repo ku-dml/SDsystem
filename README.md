@@ -2,9 +2,9 @@
 
 ## build
 
-1. Download [OGDF::Elderberry](https://www.ogdf.uni-osnabrueck.de/2023/09/14/elderberry/)
-2. unzip OGDF and put under this directory
-3. execute `prebuild.sh` or following commands (See [official reference](https://github.com/ogdf/ogdf/blob/master/doc/build.md))
+<!-- 1. Download [OGDF::Elderberry](https://www.ogdf.uni-osnabrueck.de/2023/09/14/elderberry/)
+2. unzip OGDF and put under this directory -->
+1. execute `prebuild.sh` or following commands (See [official reference](https://github.com/ogdf/ogdf/blob/master/doc/build.md))
 ```bash
 cd OGDF
 cmake .
