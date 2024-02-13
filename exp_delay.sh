@@ -22,8 +22,8 @@ mkdir -p data
 #     -common-outname results/common.csv \
 #     -type 5
 
-gs=(25 100 500)
-ps=(0.3)
+gs=(25 50 75 100 150 200 250 300 400 500 750 1000 2000 3000 4000)
+ps=(0.01)
 types=(0 1 2 3 4 5 6 7 8 9 10 11)
 
 for g in ${gs[@]}; do
@@ -33,7 +33,7 @@ for g in ${gs[@]}; do
             echo "data/random-$g-$p-$t.grh"
                 ./target/generateGraph $g $p $t "data/random-$g-$p-$t.grh"
                 ./target/enumSDSystem "data/random-$g-$p-$t.grh" \
-                    -tlim 900 \
+                    -tlim 600 \
                     -outname target/output.txt \
                     -common-outname results/common_delay.csv \
                     -type $type
