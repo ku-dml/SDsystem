@@ -169,6 +169,10 @@ private:
             _list_simple_inner(C_prime, X, depth + 1);
             // X := X U Y
             X |= Y.value();
+            if (_time_limit_ != -1.0 && cpu_time() - _start_time_ > _time_limit_) {
+                timeout_ = true;
+                return;
+            }
             // computeMRS
             Y = system_.computeMrs(C, X);
         }
