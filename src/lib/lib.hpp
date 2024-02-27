@@ -14,8 +14,8 @@
 #include <stdint.h>
 #define integer int64_t
 
-// constexpr integer N = 4000;
-constexpr integer N = 12000;
+// configure this parameter if you want to manage large instance
+constexpr integer N = 15000;
 
 #define INI_tlim -1.0
 #define INI_outname "out.txt"
@@ -169,6 +169,7 @@ private:
             _list_simple_inner(C_prime, X, depth + 1);
             // X := X U Y
             X |= Y.value();
+	        // check time
             if (_time_limit_ != -1.0 && cpu_time() - _start_time_ > _time_limit_) {
                 timeout_ = true;
                 return;

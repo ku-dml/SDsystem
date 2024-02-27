@@ -1,7 +1,6 @@
 #!/bin/bash
 
 make clean
-make target/generateGraph
 make target/enumSDSystem
 
 mkdir -p results
@@ -31,7 +30,7 @@ for g in ${gs[@]}; do
         for type in ${types[@]}; do
             for ((t = 0; t < 3; t++ )); do
             echo "data/random-$g-$p-$t.grh"
-                ./target/generateGraph $g $p $t "data/random-$g-$p-$t.grh"
+                python3 analyze/generate-random-graph.py -n $g -p $p -s $t -o "data/random-$g-$p-$t.grh"
                 ./target/enumSDSystem "data/random-$g-$p-$t.grh" \
                     -tlim 1800 \
                     -outname target/output.txt \
