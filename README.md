@@ -33,18 +33,18 @@ u_k w_m n_n
 
 | type | target | Oracle ($\theta_t$) | Alg. | Oracle |
 | --- | --- | --- | --- | --- |
-| 0 | Edge | $O(n^2)$ | 2 | Single |
-| 1 | Edge | $O(n^2)$ | 1 | Single |
-| 2 | Edge | $O(n^2)$ | 1 | All |
-| 3 | Edge | $O(n)$ | 2 | Single |
-| 4 | Edge | $O(n)$ | 1 | Single |
-| 5 | Edge | $O(n)$ | 1 | All |
-| 6 | Vertex | $O(n^2)$ | 2 | Single |
-| 7 | Vertex | $O(n^2)$ | 1 | Single |
-| 8 | Vertex | $O(n^2)$ | 1 | All |
-| 9 | Vertex | $O(n)$ | 2 | Single |
-| 10 | Vertex | $O(n)$ | 1 | Single |
-| 11 | Vertex | $O(n)$ | 1 | All |
+| 0 | Edge | $O(n^2)$ | 2 | One-by-one |
+| 1 | Edge | $O(n^2)$ | 1 | One-by-one |
+| 2 | Edge | $O(n^2)$ | 1 | All-at-once |
+| 3 | Edge | $O(n)$ | 2 | One-by-one |
+| 4 | Edge | $O(n)$ | 1 | One-by-one |
+| 5 | Edge | $O(n)$ | 1 | All-at-once |
+| 6 | Vertex | $O(n^2)$ | 2 | One-by-one |
+| 7 | Vertex | $O(n^2)$ | 1 | One-by-one |
+| 8 | Vertex | $O(n^2)$ | 1 | All-at-once |
+| 9 | Vertex | $O(n)$ | 2 | One-by-one |
+| 10 | Vertex | $O(n)$ | 1 | One-by-one |
+| 11 | Vertex | $O(n)$ | 1 | All-at-once |
 
 ## parameters
 
