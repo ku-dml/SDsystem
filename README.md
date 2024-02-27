@@ -26,7 +26,8 @@ u_k w_m n_n
 
 ## Note
 
-If you fix `*.hpp`, then you should execute `make clean` in order to clear cache build.
+1. If you fix `*.hpp`, then you should execute `make clean` in order to clear cache build.
+2. If you manage large instance ($n>15000$), you should change parameter `N` in `lib/lib.hpp` to large number ([here](https://github.com/ku-dml/SDsystem/blob/main/src/lib/lib.hpp#L18)).
 
 ## type
 
